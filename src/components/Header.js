@@ -1,0 +1,27 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Header = (props) => (
+    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
+        <div className="content">
+            <div className="inner">
+                <h1>Jason Luu</h1>
+                <p>Looking to join a strong development team. Contact me.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+)
+
+Header.propTypes = {
+    onOpenArticle: PropTypes.func,
+    timeout: PropTypes.bool
+}
+
+export default Header
