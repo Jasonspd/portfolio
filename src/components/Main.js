@@ -19,16 +19,19 @@ class Main extends React.Component {
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Project #1</p>
-          <p>Project #2</p>
-          <p>Project #3</p>
+          {/* <span className="image main"><img src={pic02} alt="" /></span> */}
+          <p><a href="https://github.com/Jasonspd/CV/raw/master/fantaxyou_movement_small.mov/" target="_blank" rel="noopener noreferrer"> Fantaxyou music bot for Movement </a></p>
+          <p><a href="https://www.bicshaveclub.com/uk" target="_blank" rel="noopener noreferrer"> Bicshaveclub for Movement </a></p>
+          <p><a href="http://www.workreduce.com/" target="_blank" rel="noopener noreferrer"> Workreduce for Movement </a></p>
+          <p><a href="http://advertorial.immediate.co.uk/flight-centre/#/" target="_blank" rel="noopener noreferrer"> Flight centre Queensland Quiz for Immediate Media </a></p>
+          <p><a href="http://www.stockportsuicideprevention.org.uk/" target="_blank" rel="noopener noreferrer"> Stockport - Suicide Prevention website using Jekyll </a></p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
+          {/* <span className="image main"><img src={pic03} alt="" /></span> */}
+          <p>Full Stack Javascript Developer with over 3 years of experience</p>
           <p>Started from the bottom, now I'm a developer... My journey begain at the awesome 
             <a href="https://www.foundersandcoders.com/" target="_blank" rel="noopener noreferrer"> Founders & Coders </a> 
             where I learned NodeJS and web development in Javascript.
@@ -36,6 +39,10 @@ class Main extends React.Component {
             I spent time mentoring new students and building MVPs for commercial clients.
             Soon after, I did some freelancing and worked for several companies working primarily as a 
             Front End Developer.
+          </p>
+          <p>My last role was at 
+            <a href="https://www.movement.co.uk/" target="_blank" rel="noopener noreferrer"> Movement </a> 
+            where I spent 2 years as the primary developer.
           </p>
           {close}
         </article>
@@ -46,6 +53,7 @@ class Main extends React.Component {
         ${this.props.articleTimeout ? 'timeout' : ''}`}
         style={{display:'none'}}>
           <h2 className="major">Contact</h2>
+          <p><a href="https://github.com/Jasonspd/CV/blob/master/README.md" target="_blank" rel="noopener noreferrer"> CV </a></p>
           <ul className="icons">
             <li>
               <a 
@@ -63,15 +71,6 @@ class Main extends React.Component {
               rel="noopener noreferrer"
               className="icon fa-github">
               <span className="label">GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a 
-              href="https://github.com/Jasonspd/CV" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon fa-file">
-              <span className="label">CV</span>
               </a>
             </li>
             <li>
