@@ -20,11 +20,16 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           {/* <span className="image main"><img src={pic02} alt="" /></span> */}
-          <p><a href="http://www.movement.uk/" target="_blank" rel="noopener noreferrer"> Movement company website for Movement </a></p>
-          <p><a href="https://github.com/Jasonspd/CV/raw/master/fantaxyou_movement_small.mov/" target="_blank" rel="noopener noreferrer"> Fantaxyou music bot for Movement </a></p>
-          <p><a href="http://www.workreduce.com/" target="_blank" rel="noopener noreferrer"> Workreduce for Movement </a></p>
-          <p><a href="https://www.bicshaveclub.com/uk" target="_blank" rel="noopener noreferrer"> Bicshaveclub for Movement </a></p>
-          <p><a href="http://advertorial.immediate.co.uk/flight-centre/#/" target="_blank" rel="noopener noreferrer"> Flight centre Queensland Quiz for Immediate Media </a></p>
+          <span> At Movement Digital</span><br></br>
+          <p><a href="http://www.movement.uk/" target="_blank" rel="noopener noreferrer"> Movement company website</a></p>
+          <p><a href="https://github.com/Jasonspd/CV/raw/master/fantaxyou_movement_small.mov/" target="_blank" rel="noopener noreferrer"> Fantaxyou intelligent music video app</a><p>Lead developer in this unique web app writting in Nodejs, Javascript and PHP as part of an award winning campaign.</p></p>
+          <p><a href="http://www.workreduce.com/" target="_blank" rel="noopener noreferrer"> Workreduce for Movement </a><p> A bespoke website using vanila javascipt</p></p>
+          <span> At Immediate Media</span><br></br>
+          <p><a href="http://advertorial.immediate.co.uk/flight-centre/#/" target="_blank" rel="noopener noreferrer"> Flight centre Queensland </a><p> A microsite in a quiz format using AngularJS</p></p>
+          <p>More can be found at my <a 
+              href="https://www.github.com/Jasonspd" 
+              target="_blank"
+              rel="noopener noreferrer">Github</a></p>
           {close}
         </article>
 
